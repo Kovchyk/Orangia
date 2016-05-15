@@ -1,0 +1,362 @@
+@font-face {
+	font-family: 'Helvetica-Bold';
+		src: 
+			url('../fonts/Helvetica-Bold.eot?#iefix') format('embedded-opentype'),  
+			url('../fonts/Helvetica-Bold.otf')  format('opentype'),
+		    url('../fonts/Helvetica-Bold.woff') format('woff'), 
+		    url('../fonts/Helvetica-Bold.ttf')  format('truetype'), 
+		    url('../fonts/Helvetica-Bold.svg#Helvetica-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NewsGothicBT-BoldExtraCondensed';
+		src: 
+			url('../fonts/NewsGothicBT-BoldExtraCondensed.eot?#iefix') format('embedded-opentype'),  
+			url('../fonts/NewsGothicBT-BoldExtraCondensed.woff') format('woff'), 
+			url('../fonts/NewsGothicBT-BoldExtraCondensed.ttf')  format('truetype'), 
+			url('../fonts/NewsGothicBT-BoldExtraCondensed.svg#NewsGothicBT-BoldExtraCondensed') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	margin: 0;
+	color: #000;
+	background: #141414;
+	font: 14px/20px helvetica, sans-serif;
+}
+/* General reset */
+* {
+	box-sizing: border-box;
+		-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+				-o-box-sizing: border-box;
+					-ms-box-sizing: border-box;
+}
+form, fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img {
+	border-style: none;
+	display: block;
+}
+input, select, textarea {
+	vertical-align: middle;
+	display: block;
+	outline: none;
+	font: 14px/16px Arial;
+	color: #888888;
+}
+label, input[type="submit"]{
+	cursor: pointer;
+}
+a {
+	color: #f00;
+	text-decoration: none;
+}
+a:hover {text-decoration: underline;}
+/* ----------header---------- */
+#header-wrapper {
+	margin: 0 auto;
+	max-width: 960px;
+}
+#header {
+	width: 100%;
+	padding: 18px 0 10px;
+	overflow: hidden;
+	border-bottom: 1px solid #080808;
+}
+h1 {
+	float: left;
+	margin: 0;
+}
+a.logo {
+	font-size: 0;
+	display: block;
+	width: 117px;
+	height: 33px;
+	background: url(../img/logo.png) no-repeat;
+}
+.nav-main {
+	float: right;
+	overflow: hidden;
+	margin: 6px 0 0;
+}
+.nav-main a {
+	float: left;
+	color: #fff;
+	font: 11px/13px "Helvetica-Bold";
+	text-transform: uppercase;
+	margin: 0 0 0 16px;
+}
+/*----------------gallery-------------------*/
+.gallery {
+	width: 100%;
+	border-top: 1px solid #ab8900;
+	border-bottom: 1px solid #af8e00;
+	background: linear-gradient(to bottom, #f8932c, #fa8d1e) no-repeat;
+		background: -webkit-linear-gradient(top, #f8932c, #fa8d1e) no-repeat;
+			background: -moz-linear-gradient(top, #f8932c, #fa8d1e) no-repeat;
+				background: -o-linear-gradient(top, #f8932c, #fa8d1e) no-repeat;
+					background: -ms-linear-gradient(top, #f8932c, #fa8d1e) no-repeat;
+}
+.gallery-gradient {
+	background: radial-gradient(circle at 31% 45%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 25%) no-repeat;
+		background: -webkit-radial-gradient(31% 45%, circle, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 25%) no-repeat;
+			background: -moz-radial-gradient(31% 45%, circle, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 25%) no-repeat;
+				background: -o-radial-gradient(31% 45%, circle, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 25%) no-repeat;
+					background: -ms-radial-gradient(31% 45%, circle, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 25%) no-repeat;
+}
+.gallery-gradient:before {
+	content: "";
+    height: 5px;
+    display: block;
+    margin: -5px;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.8);
+}
+.gallery-gradient:after {
+	content: "";
+    height: 5px;
+    display: block;
+    margin: -5px;
+    box-shadow: 0 -3px 3px 0 rgba(0, 0, 0, 0.6);
+}
+.ul-holder {
+	position: relative;
+	padding: 39px 0 16px 2px;
+	max-width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.ul-holder .list {
+	position: relative;
+ 	margin: 0 auto;
+ 	overflow: hidden;
+  	width: 100%;
+}
+.ul-holder .list li {
+	width: 960px;
+	position: relative;
+  	float: left;
+  	width: 100%;
+}
+.ul-holder .list li img {
+	float: left;
+	width: 31.7%;
+}
+.info {
+	float: right;
+	width: 57.5%;
+	padding: 12px 0 0;
+}
+.info h2 {
+	margin: 0;
+	font: 48px/50px "NewsGothicBT-BoldExtraCondensed";
+	text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+	font-weight: normal;
+}
+.info span {
+	display: inline-block;
+	border-bottom: 1px solid #a05100;
+	padding: 0 25px 5px 0;
+}
+.info span.border {
+	border-bottom: 1px solid #ffe784;
+	padding: 0;
+}
+.info p {
+	margin: 0;
+	padding: 18px 0 2px;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+.images-holder {
+	width: 100%;
+	border-top: 1px solid #a05100;
+	border-bottom: 1px solid #a05100;
+	margin: 18px 0 0;
+}
+.images {
+	width: 100%;
+	text-align: center;
+	padding: 12px 6% 8px;
+	border-top: 1px solid #ffe784;
+	border-bottom: 1px solid #ffe784;
+}
+.images .img {
+	width: 17%;
+	margin: 0 0 0 9.2%;
+	border: 1px solid #a05100;
+	display: inline-block;
+}
+.images .img:first-child {
+	margin: 0;
+}
+.info .images .img a {
+	display: block;
+	border: 1px solid #ffe784;
+	padding: 5px;
+}
+.info .images .img img {
+	width: 100%;
+	float: none;
+}
+.info .button-holder {
+	width: 100%;
+	overflow: hidden;
+	margin: 22px 0 79px;
+}
+.info .button-holder a {
+	border: 1px solid #141414;
+	float: right;
+	border-radius: 8px;
+	color: #efefef;
+	padding: 8px 30px 8px 37px;
+	box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.7);
+	background: linear-gradient(to bottom, #16171b, #212227) no-repeat;
+		background: -webkit-linear-gradient(top, #16171b, #212227) no-repeat;
+			background: -moz-linear-gradient(top, #16171b, #212227) no-repeat;
+				background: -o-linear-gradient(top, #16171b, #212227) no-repeat;
+					background: -ms-linear-gradient(top, #16171b, #212227) no-repeat;
+}
+.info a.button:hover {
+	text-decoration: none;
+}
+.list_tabs {
+	position: absolute;
+	left: 50%;
+	bottom: 35px; 
+	float: left;
+	z-index: 2;
+}
+.list_tabs li {
+	float: left;
+	position: relative;
+	right: 50%;
+	margin: 0 13px 0 0;
+}
+.list_tabs li a {
+	display: block;
+	font-size: 0;
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
+	background: #c56300;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4) inset;
+	transition: background 0.6s ease-in;
+		-webkit-transition: background 0.6s ease-in;
+			-moz-transition: background 0.6s ease-in;
+				-o-transition: background 0.6s ease-in;
+					-ms-transition: background 0.6s ease-in;
+}
+.list_tabs li:hover a, .list_tabs li.list_here a {
+	background: none;
+}
+/*------------------gallery end---------------*/
+/*---------------------footer-----------------*/
+#footer-wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	border-top: 1px solid #0c0c0c;
+}
+#footer {
+	overflow: hidden;
+	padding: 59px 0 24px 2px;
+}
+.about {
+	float: left;
+	width: 47.5%;
+	border-right: 1px solid #2f2f2f;
+}
+#footer h2 {
+	margin: 0 0 20px;
+	font: 24px/26px "NewsGothicBT-BoldExtraCondensed";
+	color: #dedede;
+}
+#footer p {
+	margin: 0;
+	padding: 0 10px 27px 0;
+	font-size: 12px;
+	line-height: 20px;
+	color: #bfbfbf;
+}
+.nav-holder {
+	float: left;
+	border-top: 1px solid #000;
+}
+.footer-menu {
+	overflow: hidden;
+	padding: 26px 22px 0 0;
+	border-top: 1px solid #2f2f2f;
+}
+.footer-menu a {
+	float: left;
+	color: #6c6c6c;
+	font: 10px/12px "Helvetica-Bold";
+	text-transform: uppercase;
+	text-decoration: underline;
+	margin: 0 14px 20px 0;
+}
+.friends {
+	float: left;
+	width: 26.3%;
+	padding: 0 25px 18px 22px;
+	border-left: 1px solid #000;
+	border-right: 1px solid #2f2f2f;
+}
+#footer .friends h2 {
+	margin: 0;
+}
+.friends ul {
+	padding: 1px 0 0;
+	border-bottom: 1px solid #2f2f2f;
+}
+.friends ul li {
+	padding: 18px 0 2px;
+	border-bottom: 1px solid #000;
+}
+.friends ul li:not(:first-of-type) {
+	border-top: 1px solid #2f2f2f;
+}
+.friends ul li a {
+	color: #bfbfbf;
+	font-size: 12px;
+	line-height: 14px;
+}
+.idea {
+	float: left;
+	width: 26.2%;
+	padding: 96px 0 92px;
+	border-left: 1px solid #000;
+}
+.idea span {
+	font: 10px/12px "Arial";
+	color: #474747;
+	font-weight: bold;
+	float: right;
+}
+.idea span a {
+	font: 23px/25px "Arial";
+	color: #dedede;
+	font-weight: bold;
+	margin: 0 0 0 12px;
+}
+.idea span a:hover {
+	text-decoration: none;
+}
+.copy {
+	width: 100%;
+	float: left;
+	margin: 6px 0 0;
+}
+.copy span {
+	font: 10px/12px "Arial";
+	color: #434343;
+	font-weight: bold;
+}
